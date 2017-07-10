@@ -9,6 +9,7 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import reducers from './src/redux/reducers/reducers';
+import App from './src/App';
 
 const store = createStore(reducers, {
   isLoggedIn: false,
